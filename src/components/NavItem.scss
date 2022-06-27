@@ -1,0 +1,20 @@
+.nav-link {
+  @apply transition duration-300 flex justify-center items-center p-2.5 rounded-full text-gray-600 hover:text-white;
+
+  &:hover > a > .title {
+    @apply visible opacity-100 -translate-x-8;
+  }
+
+  a > .title {
+    @apply invisible absolute transition-all duration-500 ease-in-out opacity-0 left-28 px-2 py-1 bg-white rounded-md text-sm font-thin text-gray-700;
+
+    &:before {
+      content: '';
+      @apply absolute transition duration-500 -left-1 top-1/2 w-2.5 h-2.5 bg-white rounded-sm rotate-45 -translate-y-1/2;
+    }
+  }
+
+  a > .icon {
+    @apply w-6 h-6;
+  }
+}

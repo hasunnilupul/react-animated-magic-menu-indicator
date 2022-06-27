@@ -1,0 +1,7 @@
+.navigation {
+  @apply relative p-2 rounded-full drop-shadow-lg bg-white cursor-pointer;
+
+  ul {
+    @apply space-y-2;
+  }
+}
